@@ -5,7 +5,7 @@
 <html id="htmlId">
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=windows-1254"> 
-  <title>Coverage Report > FizzBuzz</title>
+  <title>Coverage Report > MainApp</title>
   <style type="text/css">
     @import "../../css/coverage.css";
     @import "../../css/idea.min.css";
@@ -22,7 +22,7 @@ Current scope:     <a href="../../index.html">all classes</a>
     <a href="../index.html">com.luv2code.tdd</a>
 </div>
 
-<h1>Coverage Summary for Class: FizzBuzz (com.luv2code.tdd)</h1>
+<h1>Coverage Summary for Class: MainApp (com.luv2code.tdd)</h1>
 
 <table class="coverageStats">
 <tr>
@@ -41,7 +41,7 @@ Current scope:     <a href="../../index.html">all classes</a>
 </th>
 </tr>
 <tr>
-  <td class="name">FizzBuzz</td>
+  <td class="name">MainApp</td>
 <td class="coverageStat">
   <span class="percent">
     100%
@@ -60,10 +60,10 @@ Current scope:     <a href="../../index.html">all classes</a>
 </td>
 <td class="coverageStat">
   <span class="percent">
-    88.9%
+    66.7%
   </span>
   <span class="absValue">
-    (8/9)
+    (2/3)
   </span>
 </td>
 </tr>
@@ -77,32 +77,12 @@ Current scope:     <a href="../../index.html">all classes</a>
 <pre>
 <code class="sourceCode" id="sourceCode">&nbsp;package com.luv2code.tdd;
 &nbsp;
-<b class="nc">&nbsp;public class FizzBuzz {</b>
-&nbsp;    public static String compute(int i) {
-<b class="fc">&nbsp;        StringBuilder result = new StringBuilder();</b>
-<b class="fc">&nbsp;        if (i % 3 == 0) {</b>
-<b class="fc">&nbsp;            result.append(&quot;Fizz&quot;);</b>
+<b class="nc">&nbsp;public class MainApp {</b>
+&nbsp;    public static void main(String[] args) {
+<b class="fc">&nbsp;        for (int i = 0; i &lt;= 100; i++) {</b>
+<b class="fc">&nbsp;            System.out.println(FizzBuzz.compute(i));</b>
 &nbsp;        }
-<b class="fc">&nbsp;        if (i % 5 == 0) {</b>
-<b class="fc">&nbsp;            result.append(&quot;Buzz&quot;);</b>
-&nbsp;        }
-<b class="fc">&nbsp;        if (result.isEmpty()) {</b>
-<b class="fc">&nbsp;            result.append(i);</b>
-&nbsp;        }
-<b class="fc">&nbsp;        return result.toString();</b>
 &nbsp;    }
-&nbsp;   /* public static String compute(int i) {
-&nbsp;        if ((i % 3 == 0) &amp;&amp; (i % 5 == 0)) {
-&nbsp;            return &quot;FizzBuzz&quot;;
-&nbsp;        } else if (i % 3 == 0) {
-&nbsp;            return &quot;Fizz&quot;;
-&nbsp;        } else if (i % 5 == 0) {
-&nbsp;            return &quot;Buzz&quot;;
-&nbsp;        }
-&nbsp;        else {
-&nbsp;            return Integer.toString(i);
-&nbsp;        }
-&nbsp;    }*/
 &nbsp;}
 </code>
 </pre>
